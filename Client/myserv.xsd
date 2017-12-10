@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://service.nure.ua/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.nure.ua/">
+
+<xs:element name="Exception" type="tns:Exception"></xs:element>
+
+<xs:element name="doubleEcho" type="tns:doubleEcho"></xs:element>
+
+<xs:element name="doubleEchoResponse" type="tns:doubleEchoResponse"></xs:element>
+
+<xs:element name="getIntentoryList" type="tns:getIntentoryList"></xs:element>
+
+<xs:element name="getIntentoryListResponse" type="tns:getIntentoryListResponse"></xs:element>
+
+<xs:element name="getInventoryById" type="tns:getInventoryById"></xs:element>
+
+<xs:element name="getInventoryByIdResponse" type="tns:getInventoryByIdResponse"></xs:element>
+
+<xs:element name="getPriceInADayById" type="tns:getPriceInADayById"></xs:element>
+
+<xs:element name="getPriceInADayByIdResponse" type="tns:getPriceInADayByIdResponse"></xs:element>
+
+<xs:element name="getPriceInHourById" type="tns:getPriceInHourById"></xs:element>
+
+<xs:element name="getPriceInHourByIdResponse" type="tns:getPriceInHourByIdResponse"></xs:element>
+
+<xs:element name="getYearInADayById" type="tns:getYearInADayById"></xs:element>
+
+<xs:element name="getYearInADayByIdResponse" type="tns:getYearInADayByIdResponse"></xs:element>
+
+<xs:element name="parseXML" type="tns:parseXML"></xs:element>
+
+<xs:element name="parseXMLResponse" type="tns:parseXMLResponse"></xs:element>
+
+<xs:complexType name="getIntentoryList">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIntentoryListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getYearInADayById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getYearInADayByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInventoryById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInventoryByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPriceInHourById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPriceInHourByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doubleEcho">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doubleEchoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPriceInADayById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPriceInADayByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="parseXML">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="parseXMLResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
