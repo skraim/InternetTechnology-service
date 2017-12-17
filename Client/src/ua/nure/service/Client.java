@@ -7,7 +7,6 @@ import java.net.URL;
 
 public class Client {
     public static final String ADD = "http://localhost:8080/myserv";
-    public static final String ADD2 = "file:///" + System.getProperty("user.dir") + "/myserv.wsdl";
 
     public static void main(String[] args) throws MalformedURLException {
         try {
